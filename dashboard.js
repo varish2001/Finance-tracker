@@ -11,7 +11,7 @@ let currentUsername = localStorage.getItem("currentUser");
 // If not logged in, redirect to login page
 if (isUserLoggedIn !== "true" || currentUsername === null) {
     alert("Please login first!");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 // This code follows basic JavaScript DOM concepts:
@@ -401,7 +401,7 @@ logoutBtn.addEventListener("click", function() {
         console.log("Logging out...");
 
         // Redirect to login page
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
 });
 
